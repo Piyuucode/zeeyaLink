@@ -1,0 +1,203 @@
+body {
+    background-color: rgba(220, 227, 230, 0.938);
+}
+
+.header {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    justify-content: center;
+}
+
+.content {
+    background-color: transparent;
+    backdrop-filter: blur(8px);
+    border-radius: 8px;
+    width: 36%;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+    margin-top: 1%;
+    text-align: left;
+    padding: 15px 15px;
+    position: fixed;
+    top: 5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.share-button {
+    background-color: transparent;
+    border-radius: 8px;
+    width: 40px;
+    height: 40px;
+    border: 1px solid black;
+    cursor: pointer;
+    margin-left: 65%;
+    transition: background-color 0.5s, transform 0.3s;
+}
+
+.share-button:hover {
+    background-color: #333;
+    color: #ffffff;
+}
+
+.share-button i {
+    font-size: 15px;
+    padding-left: 7px;
+}
+
+.NavbarBrand a {
+    font-family: 'Courier New', Courier, monospace;
+    text-decoration: none;
+    font-weight: bold;
+    color: #333;
+    font-size: 1.4em;
+}
+
+.NavbarBrand i {
+    padding-right: 5px;
+}
+
+.profil {
+    width: 100px;
+    border: 5px solid #ffffff;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-top: 8%;
+    margin-bottom: -8px;
+}
+
+.full__content {
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.information-content .title {
+    margin-bottom: -5px;
+    font-weight: bold;
+    line-height: 1.2;
+    font-size: 1.4em;
+}
+
+.information-content .position {
+    font-weight: lighter;
+}
+
+.social-media {
+    margin-top: 3%;
+    justify-content: center;
+}
+
+.content_social-media {
+    background-color: #ffffff;
+    border-radius: 8px;
+    height: 9vh; 
+    width: 38%; 
+    margin-bottom: 15px; 
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease-in-out;
+}
+
+.content_social-media:hover {
+    transform: translateY(-5px); /* Efek naik sedikit saat dihover */
+}
+
+.content_social-media a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.content_social-media a i {
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+.content_social-media a:hover {
+    color: #1877f2; /* Ubah warna teks saat dihover */
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .content {
+        width: 85%;
+    }
+
+    .content_social-media {
+        width: 95%;
+    }
+
+    .content_social-media a i {
+        font-size: 15px;
+    }
+
+    .profil {
+        width: 80px;
+        margin-top: 18%;
+    }
+
+    .information-content .title {
+        font-size: large;
+        font-weight: bold;
+    }
+
+    .information-content .position {
+        font-size: 0.9em
+    }
+
+    .NavbarBrand a {
+        font-size: 1.1em;
+    }
+
+    footer p {
+        font-size: 0.8em;
+    }
+
+    .share-button {
+        margin-left: 52%;
+        height: 35px;
+        width: 35px;
+    }
+
+    .share-button i {
+        font-size: 15px;
+        padding-left: 4px;
+    }
+}
+
+.back-to-top {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    width: 45px;
+    height: 40px;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.back-to-top:hover {
+    background-color: #0056b3;
+}
+
+.back-to-top:focus {
+    outline: none;
+}
+
+footer {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    font-size: 0.9em;
+}
